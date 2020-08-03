@@ -5,7 +5,6 @@
   "homepage": "http://imkbhat.github.io/weather-app/",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
@@ -16,7 +15,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run cleanup && gh-pages -d build -b deploy -e build",
+     "cleanup": "rm -rf node_modules/gh-pages/.cache"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,5 +32,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
