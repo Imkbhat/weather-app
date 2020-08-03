@@ -2,7 +2,7 @@
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://imkbhat.github.io/weather-app/",
+  "homepage": "https://imkbhat.github.io/weather-app/",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "react": "^16.8.6",
